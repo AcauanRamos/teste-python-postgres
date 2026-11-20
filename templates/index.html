@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Python PostgreSQL</title>
+</head>
+
+<body>
+    <h1>Aplicação Python + PostgreSQL</h1>
+
+    {% if conectado %}
+    <h2 style="color:green">Banco conectado!</h2>
+    <p>Banco: {{ banco }}</p>
+    <p>Usuário: {{ usuario }}</p>
+    <p>Data/Hora: {{ horario }}</p>
+    {% else %}
+    <h2 style="color:red">Falha na conexão</h2>
+    <p>{{ erro }}</p>
+    {% endif %}
+</body>
+
+</html>
